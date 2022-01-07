@@ -1,6 +1,10 @@
 window.addEventListener('keydown', function (e) {
-  const selectedAudio = document.querySelector(`audio[data-key="${e.key}"]`);
-  const selectedKeyboard = document.querySelector(`div[data-key="${e.key}"]`);
+  const selectedAudio = document.querySelector(
+    `audio[data-key="${e.key.toLocaleLowerCase()}"]`,
+  );
+  const selectedKeyboard = document.querySelector(
+    `div[data-key="${e.key.toLocaleLowerCase()}"]`,
+  );
   selectedKeyboard.style.borderColor = 'orange';
   selectedKeyboard.style.fontWeight = '700';
   this.setTimeout(() => {
