@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySingleKeyboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+  crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div  class="container">
+    <div class="introduction">
+      <h1>My Sing Piano Keyboard</h1>
+    <p>Key A : DO</p>
+    <p>Key S : RE</p>
+    <p>Key D : MI</p>
+    <p>Key F : FA</p>
+    <p>Key G : SOL</p>
+    <p>Key H : LA</p>
+    <p>Key J : SI</p>
+  </div>
+  <div data-key='a' class="keyboard">Do</div>
+  <div data-key='s' class="keyboard">Re</div>
+  <div data-key='d' class="keyboard">Me</div>
+  <div data-key='f' class="keyboard">Fa</div>
+  <div data-key='g' class="keyboard">Sol</div>
+  <div data-key='h' class="keyboard">La</div>
+  <div data-key='j' class="keyboard">Si</div>
+
+    <audio data-key='a' src="./waws/do.wav"></audio>
+    <audio data-key='s' src="./waws/re.wav"></audio>
+    <audio data-key='d' src="./waws/me.wav"></audio>
+    <audio data-key='f' src="./waws/fa.wav"></audio>
+    <audio data-key='g' src="./waws/sol.wav"></audio>
+    <audio data-key='h' src="./waws/la.wav"></audio>
+    <audio data-key='j' src="./waws/si.wav"></audio>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
